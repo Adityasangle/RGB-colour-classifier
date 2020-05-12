@@ -1,30 +1,22 @@
-
-
-
 #importing all libraries
 
 import pandas as pd
-from matplotlib import pyplot
+import matplotlib.pyplot as plt
 from matplotlib.image import imread
 from os import listdir
-from numpy import asarray
-from numpy import save
-from keras.preprocessing.image import load_img
-from keras.preprocessing.image import img_to_array
+from numpy import asarray,save
+from keras.preprocessing.image import load_img,img_to_array
 from keras.utils import to_categorical
 import tensorflow as tf
 from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.layers import Conv2D
-from tensorflow.python.keras.layers import MaxPooling2D
-from tensorflow.python.keras.layers import Dense
-from tensorflow.python.keras.layers import Flatten
+from tensorflow.python.keras.layers import Conv2D,MaxPooling2D,Dense,Flatten
 from termcolor import colored
 
 #labelling the photos for dataset
 
 
 def label_dataset():
-    folder = '../DATA/Train/'
+    folder = 'DATA/Train/'
     photos, labels = list(), list()
     # enumerate files in the directory
     for file in listdir(folder):
@@ -51,7 +43,7 @@ def label_dataset():
     
     return photos,labels
 def label_testdata():
-    folder = '../DATA/test/'
+    folder = 'DATA/test/'
     test_photos, test_labels = list(), list()
     # enumerate files in the directory
     for file in listdir(folder):
