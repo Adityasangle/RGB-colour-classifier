@@ -123,11 +123,6 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 history = model.fit(photos, encoded, epochs=10,batch_size=1)
 
 
-img=input('Enter path of image')
+img=input('Enter path of image(without quotations) : ')
 preprocess(img)
-
-
-
-
-
 
