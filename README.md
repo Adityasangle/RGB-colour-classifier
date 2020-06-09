@@ -10,4 +10,5 @@ Run the project.py file.
 
 OUTPUT
 The model asks the input image's path as :- Enter path of image(without quotations) : 
+
 for example - Enter path of image(without quotations) : C:\Users\hp\Desktop\image.jpg
