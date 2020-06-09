@@ -99,6 +99,7 @@ def labelling(output):
     print(colored("GREEN","green"))
   else:
     print(colored("BLUE","blue"))
+    
 def preprocess(img):
   photo=load_img(img,target_size=(80,80))
   photo = img_to_array(photo)
